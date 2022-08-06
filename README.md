@@ -1,5 +1,5 @@
 # AbraCadabra
-Notice: This has not been tested!
+Notice: This has not been tested! So the goal of this code might not be accomplished... Again! This has not been tested, why has not been tested? Read the Important section bellow.
 If you experience any bugs, add them to the issue section 
 
 # Requierments
