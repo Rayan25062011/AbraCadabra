@@ -7,7 +7,6 @@ import urllib.request
 import urllib
 import sys
 import Col
-threads = 3
 ID = input(
     f'{Fore.GREEN}[{Fore.CYAN}>{Fore.GREEN}] {Fore.RESET}Target ID: {Fore.RED}')
 User_Name = str(input(
