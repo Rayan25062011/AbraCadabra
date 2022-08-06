@@ -13,6 +13,7 @@ ID = input(
 User_Name = str(input(
     f'{Fore.GREEN}[{Fore.CYAN}>{Fore.GREEN}] {Fore.RESET}User Name of the Target: {Fore.RED}'))
 taregtUrl = "https://www.tiktok.com/"+User_Name
+targetUrl.read()
 collect_data = "collect_data" in sys.argv
 collect_data()
 data = sys.argv & ID
@@ -20,8 +21,13 @@ if ID in data == ID:
     print("ID Accepted!")
 if ID in data != ID:
     raise ValueError("ID Invalid!" + Col.red + "NOT ACCEPTED")
-if threading.active_count() < threads:
-    attack = threading.Thread(target=util.accountNuke.Ryan_Nuke, args=(ID, User_Name))
+def beginAttack():
+    if ID in data == ID:
+        attack = threading.Thread(target=util.accountNuke.Ryan_Nuke, args=(ID, User_Name))
+        attack()
+    if ID in data != ID:
+        print("Cannot attack due to invalid ID")
+beginAttack()
 def make_sure():
     try:
         urllib.request("https://www.tiktok.com/"+User_Name)
@@ -31,4 +37,3 @@ def make_sure():
         return True
         print(f"Attack Failed, {User_name} is up.")
 make_sure()
-taregtUrl.read()
