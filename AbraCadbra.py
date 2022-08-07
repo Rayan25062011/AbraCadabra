@@ -22,7 +22,7 @@ if ID in data != ID:
     raise ValueError("ID Invalid!" + Col.red + "NOT ACCEPTED")
 def beginAttack():
     if ID in data == ID:
-        attack = threading.Thread(target=util.accountNuke.Ryan_Nuke, args=(ID, User_Name))
+        attack = threading.Thread(target=util.accountNuke.AbraCadabra_Nuke, args=(ID, User_Name))
         attack()
     if ID in data != ID:
         print("Cannot attack due to invalid ID")
